@@ -30,4 +30,12 @@ solution = (molarMass1, molarMass2, givenMass1, givenMass2, volume, temp) => {
    
 //test solution(44, 30, 3, 2, 5, 50)  deep.Equal=0.7146511212121212
 
+//8kyu decibel Scale
+function dBScale(intensity) {
+    let dB = 10 * Math.log10(intensity / (10 ** -12))
+    return dB
+    }
+
+//test (Math.round(dBScale(Math.pow(10, -11))))
+
 //8kyu 
