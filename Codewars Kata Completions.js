@@ -53,4 +53,23 @@ stringToArray = string => {
 }
 //test console.log(stringToArray("robin singh"))
 
-//8kyu 
+//8kyu USD->CNY witha 0.00 fixed decimal
+function usdcny(usd) {
+    let total = usd * 6.75
+    let fixed = total.toFixed(2)
+    return `${fixed} Chinese Yuan`
+  }
+//test usdcny(465)
+
+//8kyu Gravity Flip
+const flip = (d,a) => {
+    if  (d === 'R') {
+       arr = (a.sort((a,b) => a-b))
+      return arr
+    } else if 
+    (d === 'L') {
+       arr = (a.sort((a,b) => b-a))
+      return arr
+    }
+}
+//test flip('R', [3,2,1,2])
