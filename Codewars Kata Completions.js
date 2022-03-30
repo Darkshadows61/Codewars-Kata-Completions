@@ -87,4 +87,37 @@ function accum(s) {
 }
 //test accum('ZpglnRxqenU')
 
+//8kyuMerge 2 sorted arrays into one
+function mergeArrays(arr1, arr2) {
+    let newArr = arr1.concat(arr2)
+    let arrNon =  newArr.sort((a,b) => a-b)
+    arrNon = [... new Set(newArr)]
+    return arrNon
+  }
+
+//8kyu Remove First and Last Characters of a String
+removeChar = str => {
+    return str.slice(1, -1)
+}
+//test removeChar('eloquent')
+
+//8kyu Opposites Attract
+lovefunc = (flower1, flower2) => {
+    if (flower1 % 2 === 0 && flower2 % 2 != 0){
+        return true
+    } else if 
+        (flower1 % 2 != 0 && flower2 % 2 === 0) {
+          return true
+    } else if
+        (flower1 === 0 && flower2 % 2 != 0) {
+          return true
+    } else if
+        (flower1 === 0 && flower2 === 0) {
+          return false
+    } else {
+          return false
+    }
+  }
+//test lovefunc(1,4) then lovefunc(0,0)
+
 //7kyu 
