@@ -176,14 +176,14 @@ firstNonConsecutive = (arr) => {
   }
 //test firstNonConsecutive([1,2,3,4,6,7,8])
 
-//eloquent JS Chap 2 example 1 # triangle
+//eloquent JS Chap 2 Example 1 # triangle
 triangle = (total) => {
     let str = "";
     for (let i = 0; i <= total; i++)
      {console.log(str += "#")}
     }
 
-//eloquent JS Chap 2 example 2 FizzBuzz
+//eloquent JS Chap 2 Example 2 FizzBuzz
 fizzBuzz = () => {
   let start = "";
   for (let i = 1; i <= 100; i++)
@@ -197,10 +197,36 @@ fizzBuzz = () => {
   }
 } 
 
-//eloquent JS Chap 2 example 3 chessboard
+//eloquent JS Chap 2 Example 3 chessboard
 chess = (grid) => {
   let str = "";
   for (let i = 0; i <= grid; i++) {
     console.log(str += ' # # # # \n# # # #\n')
   }
+}
+
+//eloquent JS Chap 3 Example 1 Minimum
+//console.log(Math.min(0, 10))
+//console.log(Math.min(0, -10))
+
+//eloquent JS Chap 3 Example 2 Recursion
+isEven = (n) => {
+  let result;
+  if (n % 2 === 0) {
+    return 'even'
+  } else {
+    return 'odd'
+  }
+  console.log(result)
+}
+
+//eloquent JS Chap 3 Example 3
+countBs = (b) => {
+  bs = 0;
+  for (i = 0; i < b.length; i++) {
+    if (b.charAt(i) === 'B') {
+      bs++;
+    }
+  }
+  return(bs)
 }
