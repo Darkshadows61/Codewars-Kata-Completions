@@ -230,3 +230,13 @@ countBs = (b) => {
   }
   return(bs)
 }
+
+//eloquent JS Chap 4 Example 1 Sum of an Array
+range = (start, end) => {
+  let sum = start;
+    for (i = start; i <= end; i++) {
+      return sum++
+    }
+    
+}
+//test 
