@@ -345,3 +345,7 @@ function descendingOrder(n){
 }
 //test descendingOrder(123465) = 654321
 
+//7kyu disemvowel- remove vowels from a string
+disemvowel = (str) => {
+ return str.replace(/A|E|I|O|U|a|e|i|o|u/g, '') 
+}
