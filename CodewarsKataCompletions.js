@@ -370,4 +370,36 @@ function findShort(s) {
 }
 //test findShort('bitcoin may small after all) returns 3
 
+//8kyu How good are you really?
+function betterThanAverage(classPoints, yourPoints) {
+classSum = classPoints.reduce((pVal, cVal) => pVal + cVal)
+classAvg = classSum/(classPoints.length);
+ if (classAvg > yourPoints) {
+   return false
+ } else {
+   return true
+ }
+}
+//test 
+
+//7kyu array Adder
+function arrAdder(arr) {
+  sent = "";
+  for (i = 0; i < arr[0].length; i++) {
+    for ( j = 0; j < arr.length; j++) {
+      sent+=arr[j][i]
+    }
+    sent+=" ";
+  }
+  return sent.trim()
+}
+// test arrAdder([['J','L','L','M'],['u','i','i','a'],['s','v','f','n'],['t','e','e','']])
+
+//7kyu Square Every Digit
+function squareDigits(num) {
+  let numSQ = num.toString().split('').map(x => x**2).join('')
+  return Number(numSQ)
+}
+//test squareDigits(3212)
+
 //
