@@ -402,20 +402,17 @@ function squareDigits(num) {
 }
 //test squareDigits(3212)
 
-<<<<<<< Updated upstream
 //7kyu Thinkful- longest word in a list
 function longest(words) {
   newArr = words.map(w => w.length).sort((a,b) => a-b).reverse()
   return newArr[0]
 }
-//test longest(['simple', 'is', 'better', 'than', 'complex'])
-=======
+//test longest(['simple', 'is', 'better', 'than', 'complex']
+
 //7kyu Dropcaps
 function dropCap(n) {
 let drop = n.split(' ')
 drop.map(x => n.charAt([0]).toUpperCase)
 return drop
 }
-
 //test dropCap('Revelation of the contents outraged American public opinion, and helped generate')
->>>>>>> Stashed changes
