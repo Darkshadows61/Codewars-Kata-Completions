@@ -476,3 +476,10 @@ function giveChange(amount) {
 }
 //this could 100% be made smaller and more complex, but it works.
 //test giveChange(365) should output [0,1,1,0,1,3]
+
+//7kyu Alphabet Symmetry
+function solve(arr){  
+  const alpha = "abcdefghijklmnopqrstuvwxyz";
+  return arr.map(x => x.toLowerCase().split('').filter((y,i) => i==alpha.indexOf(y)).length);
+};
+//test solve(["abode","ABc","xyzD"])
