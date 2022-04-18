@@ -483,3 +483,17 @@ function solve(arr){
   return arr.map(x => x.toLowerCase().split('').filter((y,i) => i==alpha.indexOf(y)).length);
 };
 //test solve(["abode","ABc","xyzD"])
+
+//7kyu You're a square!
+function isSquare(n) {
+  if (n < 0) {
+    return false //`${n}: Negative numbers cannot be square numbers`
+  } else if (Number.isInteger(Math.sqrt(n))) {
+    return true //`${n} is a square number (${n} * ${n})`
+  } else {
+    return false //`${n} is not a square number`
+  }
+}
+//test isSquare(25), true
+
+//
