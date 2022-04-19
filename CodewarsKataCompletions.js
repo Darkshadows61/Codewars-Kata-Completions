@@ -509,3 +509,13 @@ function squareOrSquareRoot(array) {
   } return arr;  
 }
 //test squareOrSquareRoot([ 4, 3, 9, 7, 2, 1 ])
+
+//7kyu barista
+function barista(coffees) {
+  order = coffees.sort((a,b) => (a-b))
+  timePer = order.map(x => x+2)
+    for (i=0; i<timePer.length; i++)
+    timePer[i] = timePer[i] + timePer[i]
+  return timePer
+
+}
