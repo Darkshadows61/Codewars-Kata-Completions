@@ -559,3 +559,17 @@ String.prototype.toJadenCase = function () {
   }).join(" ");
 }
 //test str.toJadenCase(), "How Can Mirrors Be Real If Our Eyes Aren't Real")
+
+//8kyu string to number
+var stringToNumber = function(str){
+  return Number(str)
+}
+//test str('1234')
+
+//7kyu Beginner Series Sum of Numbers
+function getSum (a,b) {
+  let min = Math.min(a,b)
+  let max = Math.max(a,b)
+  return (max - min + 1) * (min + max) / 2;
+}
+//test getSum(5,0) === 15
