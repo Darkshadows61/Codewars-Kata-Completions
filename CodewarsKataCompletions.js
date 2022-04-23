@@ -596,4 +596,28 @@ function likes(names) {
 }
 //test likes([jack, adam, marshall, rick]) === 'jack, adam and 2 others like this'
 
-//
+//5kyu Moving Zeros To The End
+function moveZeros(arr) {
+  let zeros = 0;
+  for (i = 0; i <= arr.length; i++) {
+    let isZero = arr[i] === 0
+      if (isZero) {
+        zeros++
+        arr.splice(i,1)
+        i--
+      }
+  }
+  for (let i = 0; i < zeros; i++) {
+    arr.push(0)
+  }
+  return arr
+}
+//test moveZeros([1,2,0,1,0,1,0,3,0,1])
+
+//7kyu remove zeros
+function moveZer0s(arr) {
+  arr1 = arr.filter(zero => zero != 0);
+  arr2 = arr.filter(zero => zero === 0);
+  return arr1.concat(arr2)
+}
+//test moveZeros([1,2,0,1,0,1,0,3,0,1])
