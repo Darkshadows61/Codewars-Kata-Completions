@@ -621,3 +621,12 @@ function moveZer0s(arr) {
   return arr1.concat(arr2)
 }
 //test moveZeros([1,2,0,1,0,1,0,3,0,1])
+
+
+//6kyu array.diff
+function arrayDiff(a,b) {
+  return a.filter(x => !b.includes(x))
+}
+//test arrayDiff([1,2,2], [2])
+
+//
