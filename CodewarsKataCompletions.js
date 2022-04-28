@@ -662,3 +662,51 @@ function basicOp(operation, value1, value2) {
   }
 }
 //test basicOp('+', 4, 7)
+
+//8kyu Grasshopper Summation
+summation = (num) => {
+  arr=[];
+  for (let i=1; i<=num; i++) {
+    if (i<=num) {
+      arr.push(i)
+    }
+  }
+  return arr.reduce((pv,cv) => pv + cv, 0)
+}
+//test summation(10) === 55
+
+//stopwatch object
+function Stopwatch() {
+  let startTime, endTime, running, duration = 0;
+
+  this.start = function() {
+    if (running)
+      throw new Error('Stopwatch has already started.')
+
+    running = true;
+
+    startTime =  new Date();
+  };
+
+  this.stop = function() {
+    if (!running)
+      throw new Error('Stopwatch is not started.')
+
+      running = false;
+
+      endTime = new Date();
+      const seconds = (endTime.getTime() - startTime.getTime()) / 1000;
+      duration += seconds;
+  };
+
+  this.reset = function() {
+    startTime = null;
+    endTime = null;
+    duration = 0;
+    running = false;
+  }
+
+  Object.defineProperty(this, 'duration', {
+    get: function() {return duration;}
+  });
+}
