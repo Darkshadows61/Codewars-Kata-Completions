@@ -685,7 +685,7 @@ function Stopwatch() {
 
     running = true;
 
-    startTime =  new Date();
+    startTime = new Date();
   };
 
   this.stop = function() {
@@ -709,4 +709,9 @@ function Stopwatch() {
   Object.defineProperty(this, 'duration', {
     get: function() {return duration;}
   });
+}
+
+//8kyu Returning Strings
+greet = (name) => {
+  return `Hello, ${name} how are you doing today?`
 }
