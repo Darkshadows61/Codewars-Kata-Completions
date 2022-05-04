@@ -736,3 +736,16 @@ function isDivisible(n,x,y) {
   }
 }
 //test isDivisible(3,3,4) === false
+
+//8kyu 
+class Kata {
+  static getVolumeOfCuboid(length, width, height) {
+    return length * width * height
+  }
+}
+
+//7kyu is it an Isogram?
+function isIsogram(str) {
+  return new Set(str.toUpperCase()).size == str.length
+}
+//test isIsogram("Dermatoglyphics")
