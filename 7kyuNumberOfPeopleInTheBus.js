@@ -1,0 +1,1 @@
+var number = (busStops) => busStops.reduce((remain, [on, off]) => remain + on - off, 0)
