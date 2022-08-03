@@ -1,0 +1,4 @@
+function minMax(arr){
+    return [(Math.min(...arr)),(Math.max(...arr))]
+  }
+//test minMax([1,2,3,4,5]) == [1,5]
